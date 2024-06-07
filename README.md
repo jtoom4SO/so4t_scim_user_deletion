@@ -2,10 +2,10 @@
 A Python script for Stack Overflow for Teams that uses the SCIM API to delete a list of users.
 
 ## Table of Contents
-* [Requirements](https://github.com/jklick-so/so4t_scim_user_deletion?tab=readme-ov-file#requirements)
-* [Setup](https://github.com/jklick-so/so4t_scim_user_deletion?tab=readme-ov-file#setup)
-* [Usage](https://github.com/jklick-so/so4t_scim_user_deletion?tab=readme-ov-file#usage)
-* [Support, security, and legal](https://github.com/jklick-so/so4t_scim_user_deletion?tab=readme-ov-file#support-security-and-legal)
+* [Requirements](https://github.com/StackExchange/so4t_scim_user_deletion?tab=readme-ov-file#requirements)
+* [Setup](https://github.com/StackExchange/so4t_scim_user_deletion?tab=readme-ov-file#setup)
+* [Usage](https://github.com/StackExchange/so4t_scim_user_deletion?tab=readme-ov-file#usage)
+* [Support, security, and legal](https://github.com/StackExchange/so4t_scim_user_deletion?tab=readme-ov-file#support-security-and-legal)
 
 
 ## Requirements
@@ -15,7 +15,7 @@ A Python script for Stack Overflow for Teams that uses the SCIM API to delete a 
 
 ## Setup
 
-[Download](https://github.com/jklick-so/so4t_scim_user_deletion/archive/refs/heads/main.zip) and unpack the contents of this repository
+[Download](https://github.com/StackExchange/so4t_scim_user_deletion/archive/refs/heads/main.zip) and unpack the contents of this repository
 
 **Installing Dependencies**
 
@@ -39,15 +39,15 @@ To use the SCIM API for deleting users:
         * For Enterprise, you can obtain the SCIM token from the admin settings, by selecting "Show Password" and copying the token to your clipboard.
         * For Business, you'll either need to obtain the SCIM token from the SCIM configuration of your identity provider (IdP), or you can discard the old token to generate a new one. In the latter scenario, make sure you update your IdP's SCIM configuration with the new token.
 
-* Lastly, you'll need to enable the ability for SCIM to change user permissions. In the admin settings for SCIM, you'll see one or more check boxes:
-    * For Enterprise, there's two checkboxes: "Allow Moderator Promotion via a userType property" and "Allow Admin Promotion via a userType property"
+* Lastly, you'll need to enable the ability for SCIM to change user permissions. In the admin settings for SCIM, you'll see one or more checkboxes:
+    * For Enterprise, there are two checkboxes: "Allow Moderator Promotion via a userType property" and "Allow Admin Promotion via a userType property"
     * For Business, there's one checkbox: "Allow SCIM to manage user roles"
 
 ## Usage
 
 **Deleting specific users**
 
-If you'd like to delete specific users, create a file named `users.csv` in the same directory as the script. Each line of the file should contain the email address of a user you'd like to delete. You can find a template [here](https://github.com/jklick-so/so4t_scim_user_deletion/blob/main/Templates/users.csv).
+If you'd like to delete specific users, create a file named `users.csv` in the same directory as the script. Each line of the file should contain the email address of a user you'd like to delete. You can find a template [here](https://github.com/StackExchange/so4t_scim_user_deletion/blob/main/Templates/users.csv).
 
 In a terminal window, navigate to the directory where you unpacked the script. Run the script with the `--csv` flag, replacing the URL, token, and CSV file name with your own:
 
@@ -62,4 +62,4 @@ If you'd like to delete all deactivated users, run the script with the `--deacti
 ## Support, security, and legal
 Disclaimer: This script is designed for current Stack Overflow clients that need assistance with bulk API actions. 
 
-If you run into issues using the script, please open a support issue with Stack Overflow. You are also welcome to clone the script and change it to suit your needs. It is provided as-is, with no warranty or guarantee of any kind.
+If you encounter problems using the script, please open a support issue with Stack Overflow. You are also welcome to clone and change the script to suit your needs. It is provided as-is, with no warranty or guarantee of any kind.
