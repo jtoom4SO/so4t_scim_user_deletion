@@ -61,4 +61,4 @@ If you'd like to delete all deactivated users, run the script with the `--deacti
 
 ## Support, security, and legal
 
-If you encounter problems using the script, please open a support issue with Stack Overflow. You can also clone and change the script to suit your needs. It is provided as-is, with no warranty or guarantee of any kind.
+If you encounter problems using the script, please leave feedback in the Github Issues. You can also clone and change the script to suit your needs. It is provided as-is, with no warranty or guarantee of any kind.
