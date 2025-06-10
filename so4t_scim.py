@@ -23,8 +23,10 @@ class ScimClient:
         self.session = requests.Session()
         self.base_url = url
         self.token = token
+        # Add User-Agent to headers 
         self.headers = {
-            'Authorization': f"Bearer {self.token}"
+            'Authorization': f"Bearer {self.token}",
+            'User-Agent': 'so4t_scim_user_deletion/1.0 (http://your-app-url.com; your-contact@email.com)'
         }
         self.proxies = {'https': proxy} if proxy else {'https': None}
         if "stackoverflowteams.com" in self.base_url: # For Basic and Business tiers
